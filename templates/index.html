@@ -12,9 +12,13 @@
           <h1>Swish Army Life</h1>
           <h2>Everything in One Place</h2>
         </div>
-        <div class="sign-in-container">
-            <button class="sign-in-button" onclick="redirectToLogin()">Sign In / Sign Up</button>
+        <div class="my-profile-container">
+            <button class="prof-tab-button" onclick="showTab(4)">Profile</button>
         </div>
+        <div class="sign-in-container">
+            <button class="sign-in-button" onclick="redirectToLogin">Sign In / Sign Up</button>
+        </div>
+
     </header>
       
     <!-- Tab buttons -->
@@ -35,6 +39,13 @@
         <h3>Tab 3 Content</h3>
         <p>This is the content for Life.</p>
     </div>
+    <div class="tab content">
+        <h3>Your Profile</h3>
+
+        <img src="https://t3.ftcdn.net/jpg/00/65/82/48/360_F_65824883_RcQ5YyIV23djJiwfShBwTgXwR3JHfl3w.jpg" class="profile-picture">
+        <p>This is the content for Profile.</p>
+    </div>
+    
 
     <script>
         //Switch between tabs
