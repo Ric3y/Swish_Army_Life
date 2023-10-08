@@ -71,6 +71,19 @@ h2 {
     border-radius: 5px;
     
 }
+.prof-tab-button {
+    background-color: #6a8174;
+    border: none;
+    color: #FFF;
+    width: 150px; 
+    padding: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
 
 .tab-button:hover {
     background-color: #b5cec2; 
@@ -106,4 +119,10 @@ h2 {
     background-color: #FFF2D8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
