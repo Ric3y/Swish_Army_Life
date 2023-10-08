@@ -21,7 +21,7 @@
 
         /* Header styling */
         header {
-            background-color: #2f6a31; /* Darker green background color */
+            background-color: #2e503d; /* Darker green background color */
             color: #FFF; /* White text color */
             padding: 20px 0;
             display: flex;
@@ -62,20 +62,21 @@
 
         /* Style for the tab buttons */
         .tab-button {
-            background-color: #2f6a31; /* Darker green background color */
+            background-color: #6a8174; /* Darker green background color */
             border: none;
             color: #FFF; /* White text color */
-            width: 200px; /* Fixed width for all tab buttons */
+            width: 300px; /* Fixed width for all tab buttons */
             padding: 12px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             margin: 5px;
             font-size: 16px;
             border-radius: 5px;
+            
         }
 
         .tab-button:hover {
-            background-color: #4CAF50; /* Slightly lighter green on hover */
+            background-color: #b5cec2; /* Slightly lighter green on hover */
             transform: scale(1.05);
         }
 
@@ -94,19 +95,19 @@
 
         /* CSS for the "Sign In" button */
         .sign-in-button {
-            background-color: #2f6a31; /* Darker green background color */
+            background-color: inherit; /* Takes from header background color */
             border: none;
             color: #fff;
             padding: 10px 20px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
-            margin: 10px;
+            margin-left: 1600px;
             font-size: 18px;
             border-radius: 5px;
         }
 
         .sign-in-button:hover {
-            background-color: #4CAF50; /* Slightly lighter green on hover */
+            background-color: inherit; /* Slightly lighter green on hover */
             transform: scale(1.05);
         }
     </style>
@@ -117,36 +118,27 @@
             <h1>Swish Army Life</h1>
             <h2>Everything in One Place</h2>
         </div>
-        <button class="sign-in-button">Sign In</button>
+        <button class="sign-in-button">Sign In / Sign Up</style></button>
     </header>
     
+    
     <!-- Tab buttons -->
-    <button class="tab-button" onclick="showTab(1)">Basic Information</button>
-    <button class="tab-button" onclick="showTab(2)">Home</button>
-    <button class="tab-button" onclick="showTab(3)">Auto</button>
-    <button class="tab-button" onclick="showTab(4)">Life</button>
-    <button class="tab-button" onclick="showTab(5)">Social</button>
+    <button class="tab-button" onclick="showTab(1)">Home</button>
+    <button class="tab-button" onclick="showTab(2)">Auto</button>
+    <button class="tab-button" onclick="showTab(3)">Life</button>
 
     <!-- Tab content -->
     <div class="tab active-tab content">
         <h3>Tab 1 Content</h3>
-        <p>This is the content for Basic Information.</p>
-    </div>
-    <div class="tab content">
-        <h3>Tab 2 Content</h3>
         <p>This is the content for Home.</p>
     </div>
     <div class="tab content">
-        <h3>Tab 3 Content</h3>
+        <h3>Tab 2 Content</h3>
         <p>This is the content for Auto.</p>
     </div>
     <div class="tab content">
-        <h3>Tab 4 Content</h3>
+        <h3>Tab 3 Content</h3>
         <p>This is the content for Life.</p>
-    </div>
-    <div class="tab content">
-        <h3>Tab 5 Content</h3>
-        <p>This is the content for Social.</p>
     </div>
 
     <script>
