@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swish Army Life</title>
     <style>
-        /* Reset some default styles */
+        /*Default styles */
         body, h1, h2, p, button {
             margin: 0;
             padding: 0;
@@ -56,7 +56,7 @@
         }
         
         .sign-in-container {
-            margin-left: auto; /* Pushes the sign-in container to the right */
+            margin-left: auto;
         }
 
         /* CSS for the tabs */
@@ -66,7 +66,7 @@
 
         /* Style for the tab buttons */
         .tab-button {
-            background-color: #6a8174; /* Darker green background color */
+            background-color: #6a8174;
             border: none;
             color: #FFF;
             width: 300px; 
@@ -80,7 +80,7 @@
         }
 
         .tab-button:hover {
-            background-color: #b5cec2; /* Slightly lighter green on hover */
+            background-color: #b5cec2; 
             transform: scale(1.05);
         }
 
@@ -100,9 +100,10 @@
             font-size: 18px;
             border-radius: 5px;
         }
-
+        
+        /* Slightly lighter green on hover */
         .sign-in-button:hover {
-            background-color: inherit; /* Slightly lighter green on hover */
+            background-color: inherit;
             transform: scale(1.05);
         }
 
@@ -146,7 +147,7 @@
     </div>
 
     <script>
-        // JavaScript to switch between tabs
+        //Switch between tabs
         function showTab(tabIndex) {
             var tabs = document.getElementsByClassName("tab");
             for (var i = 0; i < tabs.length; i++) {
@@ -154,8 +155,10 @@
             }
             tabs[tabIndex - 1].classList.add("active-tab");
         }
+
+        //Redirect to the /login route
         function redirectToLogin() {
-            window.location.href = "/login"; // Redirect to the /login route
+            window.location.href = "/login"; 
         }
     </script>
 </body>

@@ -8,6 +8,7 @@ test_user = {
     "password": "password123"
 }
 
+# Root route
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -20,6 +21,7 @@ def index():
             return "Login Failed. Please try again."
     return render_template('index.html')
 
+# Login route
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
