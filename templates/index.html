@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swish Army Life</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, button {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS for the page body */
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #BCA37F;
+            margin: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2f6a31; /* Darker green background color */
+            color: #FFF; /* White text color */
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Title and subtitle container */
+        .title-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* Title styling */
+        h1 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 50px;
+            color: #fff;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /* Subtitle styling */
+        h2 {
+            font-size: 24px;
+            color: #ddd;
+            margin: 0;
+        }
+
+        /* CSS for the tabs */
+        .tab {
+            display: none;
+        }
+
+        /* Style for the tab buttons */
+        .tab-button {
+            background-color: #2f6a31; /* Darker green background color */
+            border: none;
+            color: #FFF; /* White text color */
+            width: 200px; /* Fixed width for all tab buttons */
+            padding: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .tab-button:hover {
+            background-color: #4CAF50; /* Slightly lighter green on hover */
+            transform: scale(1.05);
+        }
+
+        /* CSS for the active tab */
+        .active-tab {
+            display: block;
+        }
+
+        /* Content styling */
+        .content {
+            padding: 20px;
+            background-color: #FFF2D8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* CSS for the "Sign In" button */
+        .sign-in-button {
+            background-color: #2f6a31; /* Darker green background color */
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .sign-in-button:hover {
+            background-color: #4CAF50; /* Slightly lighter green on hover */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Swish Army Life</h1>
+            <h2>Everything in One Place</h2>
+        </div>
+        <button class="sign-in-button">Sign In</button>
+    </header>
+    
+    <!-- Tab buttons -->
+    <button class="tab-button" onclick="showTab(1)">Basic Information</button>
+    <button class="tab-button" onclick="showTab(2)">Home</button>
+    <button class="tab-button" onclick="showTab(3)">Auto</button>
+    <button class="tab-button" onclick="showTab(4)">Life</button>
+    <button class="tab-button" onclick="showTab(5)">Social</button>
+
+    <!-- Tab content -->
+    <div class="tab active-tab content">
+        <h3>Tab 1 Content</h3>
+        <p>This is the content for Basic Information.</p>
+    </div>
+    <div class="tab content">
+        <h3>Tab 2 Content</h3>
+        <p>This is the content for Home.</p>
+    </div>
+    <div class="tab content">
+        <h3>Tab 3 Content</h3>
+        <p>This is the content for Auto.</p>
+    </div>
+    <div class="tab content">
+        <h3>Tab 4 Content</h3>
+        <p>This is the content for Life.</p>
+    </div>
+    <div class="tab content">
+        <h3>Tab 5 Content</h3>
+        <p>This is the content for Social.</p>
+    </div>
+
+    <script>
+        // JavaScript to switch between tabs
+        function showTab(tabIndex) {
+            var tabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active-tab");
+            }
+            tabs[tabIndex - 1].classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
