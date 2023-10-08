@@ -20,7 +20,7 @@ pip install Flask
 
 Then, clone the project at 
 ```
-git clone https://github.com/Ric3y/hackUTA-2023.git
+git clone https://github.com/Ric3y/Swish_Army_Life.git
  ```
 
 Finally, you can run the program with the command
