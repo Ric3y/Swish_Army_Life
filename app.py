@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory 
 
 app = Flask(__name__)
 
@@ -33,6 +33,10 @@ def login():
         else:
             return "Login Failed. Please try again."
     return render_template('login.html')
+
+@app.route('/static/styles.css')
+def serve_css():
+    return send_from_directory('static', 'styles.css')
 
 if __name__ == '__main__':
     app.run(debug=True)
