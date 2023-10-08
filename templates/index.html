@@ -21,11 +21,11 @@
 
         /* Header styling */
         header {
-            background-color: #2e503d; /* Darker green background color */
-            color: #FFF; /* White text color */
-            padding: 20px 0;
+            background-color: #2e503d;
+            color: #FFF;
+            padding: 20px;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
         }
 
@@ -54,6 +54,10 @@
             color: #ddd;
             margin: 0;
         }
+        
+        .sign-in-container {
+            margin-left: auto; /* Pushes the sign-in container to the right */
+        }
 
         /* CSS for the tabs */
         .tab {
@@ -64,8 +68,8 @@
         .tab-button {
             background-color: #6a8174; /* Darker green background color */
             border: none;
-            color: #FFF; /* White text color */
-            width: 300px; /* Fixed width for all tab buttons */
+            color: #FFF;
+            width: 300px; 
             padding: 12px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
@@ -87,13 +91,12 @@
 
         /* CSS for the "Sign In" button */
         .sign-in-button {
-            background-color: inherit; /* Takes from header background color */
+            background-color: inherit;
             border: none;
             color: #fff;
             padding: 10px 20px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
-            margin-left: 1600px;
             font-size: 18px;
             border-radius: 5px;
         }
@@ -115,13 +118,14 @@
 <body>
     <header>
         <div class="title-container">
-            <h1>Swish Army Life</h1>
-            <h2>Everything in One Place</h2>
+          <h1>Swish Army Life</h1>
+          <h2>Everything in One Place</h2>
         </div>
-        <button class="sign-in-button">Sign In / Sign Up</style></button>
+        <div class="sign-in-container">
+          <button class="sign-in-button">Sign In / Sign Up</button>
+        </div>
     </header>
-    
-    
+      
     <!-- Tab buttons -->
     <button class="tab-button" onclick="showTab(1)">Home</button>
     <button class="tab-button" onclick="showTab(2)">Auto</button>
