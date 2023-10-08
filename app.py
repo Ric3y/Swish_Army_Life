@@ -7,6 +7,10 @@ test_user = {
     "username": "testuser",
     "password": "password123"
 }
+test_signup_user = {
+    "username": "hackuta23",
+    "password": "password123"
+}
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -16,6 +20,8 @@ def index():
 
         if username == test_user['username'] and password == test_user['password']:
             return render_template('index.html')
+        if username == test_signup_user['username'] and password == test_signup_user['password']:
+            return render_template('signup.html')
         else:
             return "Login Failed. Please try again."
     return render_template('login.html')
