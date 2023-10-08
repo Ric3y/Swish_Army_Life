@@ -2,7 +2,7 @@
 
 Swish Army Life is an web application built with the comfort of all your checklist needs in one place. It was built using Flask in combination with  HTML
 
-## How to Use
+## Requirements
 
 Before you begin, make sure that you have the following software installed on your system:
 
@@ -18,12 +18,19 @@ pip --version
 pip install Flask
  ```
 
-Then, clone the project at 
+##How to use
+
+First, clone the project at 
 ```
 git clone https://github.com/Ric3y/Swish_Army_Life.git
  ```
 
-Finally, you can run the program with the command
+Once inside the project directory, run the following command to start the Swish Army Life web application locally:
 ```
 python app.py
+```
+
+You can now access Swish Army Life by visiting the following URL on your web browser
+```
+http://localhost:5000
 ```
