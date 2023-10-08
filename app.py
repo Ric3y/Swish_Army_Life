@@ -18,8 +18,19 @@ def index():
             return render_template('index.html')     
         else:
             return "Login Failed. Please try again."
-    return render_template('login.html')
+    return render_template('index.html')
 
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        if username == test_user['username'] and password == test_user['password']:
+            return render_template('index.html')     
+        else:
+            return "Login Failed. Please try again."
+    return render_template('login.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
