@@ -18,7 +18,7 @@ pip --version
 pip install Flask
  ```
 
-##How to use
+## How to use
 
 First, clone the project at 
 ```
